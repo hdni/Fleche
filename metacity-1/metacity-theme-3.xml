@@ -22,7 +22,7 @@
 <constant name="D_icons_unfocused_offset" value="0" /> <!-- offset of the unfocused icons -->
 <!-- geometries -->
 
-<frame_geometry name="normal" has_title="false" rounded_top_left="2" rounded_top_right="2" rounded_bottom_left="2" rounded_bottom_right="2">
+<frame_geometry name="normal" has_title="false" rounded_top_left="1" rounded_top_right="1">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
