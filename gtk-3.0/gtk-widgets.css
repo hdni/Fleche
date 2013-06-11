@@ -688,7 +688,7 @@ GtkProgressBar {
 /* progress component */
 .progressbar {
 	border-radius: 8px;
-	border-width: 1px
+	border-width: 1px;
 	background-color: @theme_selected_bg_color;
 	border-style: solid;
 	border-color: @theme_selected_bg_color;
@@ -706,7 +706,7 @@ GtkProgressBar {
 	border-width: 0 0 4px 0;
 	border-style: solid;
 	border-color: @progressbar_background;
-	border-shadow: none;
+	box-shadow: none;
 }
 
 .progressbar row:insensitive {
@@ -1317,7 +1317,7 @@ GtkLinkButton.button *:active {
 
 	border-color: transparent;
 	border-style: solid;
-	border-width: 0px
+	border-width: 0;
 
 	background-clip: border-box;
 	background-color: @theme_base_color;
