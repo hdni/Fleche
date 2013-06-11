@@ -9,6 +9,7 @@ A GNOME 3.8 theme for GNOME Shell, GTK 3, Mutter, GNOME Terminal, and Firefox. [
 
 ### Firefox
 * Install the [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/) extension.
+* Install the [FXChrome](https://addons.mozilla.org/en-US/firefox/addon/fxchrome/) theme.
 * Go to your [Add-ons Manager](about:addons), select the User Styles page and then write a new style.
 * Give the style a name and paste the contents of firefox.css.
 
