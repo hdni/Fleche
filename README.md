@@ -3,7 +3,7 @@ A GNOME 3.8 theme for GNOME Shell, GTK 3, Mutter, GNOME Terminal, and Firefox. [
 
 ## Installation
 ### GNOME Shell, GTK 3, Mutter
-* Put the entire repository in `usr/share/themes/`
+* Put the entire repository in `/usr/share/themes/`
 * You can then use the Tweak Tool to set the themes.
 * It is safe to remove the firefox.css and gnome-terminal.xml files from the directory.
 
