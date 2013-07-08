@@ -440,7 +440,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 #panelLeft, #panelCenter {
-	spacing: 4px;
+	spacing: 0px;
 }
 
 #panelLeft:ltr {

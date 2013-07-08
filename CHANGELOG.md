@@ -6,3 +6,6 @@
 
 #### 0.5.2 (2013-07-01)
 * Removed window borders on maximized windows (like Maximus)
+
+#### 0.5.3 (2013-07-07)
+* Removed padding at the left of panel
