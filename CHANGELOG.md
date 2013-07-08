@@ -9,3 +9,8 @@
 
 #### 0.5.3 (2013-07-07)
 * Removed padding at the left of panel
+
+#### 0.5.4 (2013-07-08)
+* Added overlay scrollbar for Firefox
+* Added inactive state for buttons in Firefox
+* Fixed padding in navigation button area in Firefox to be more consistent with global theme

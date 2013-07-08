@@ -53,7 +53,7 @@
     padding: 0 !important;
     margin: 0 !important;
     padding-left: 2px !important;
-    margin-left: 4px !important;
+    margin-left: 15px !important;
     margin-right: 4px !important;
     height: 28px !important;
 }
@@ -199,10 +199,16 @@
 #forward-button {
     padding-top: 1px !important;
     margin: 8px !important;
+    margin-left: 11px !important;
     background: transparent !important;
     border: none !important;
 }
- 
+
+#forward-button[disabled],
+#back-button[disabled] {
+    opacity: 0.5;
+}
+
 #reload-button,
 #stop-button,
 #downloads-indicator,
@@ -338,9 +344,8 @@ and make Firefox tabs close properly even though max-width is overridden */
     min-width: 1px !important;
 }*/
 
-/* Scrollbars */
-
-scrollbar,
+/* Normal scrollbar */
+/*scrollbar,
 scrollbar > slider, 
 scrollbar > slider > thumb, 
 scrollbar > scrollbarbutton { 
@@ -387,4 +392,65 @@ scrollbar > slider > thumb:hover,
 scrollbar > slider > thumb:active {
     background-color: #9b9eaf !important;
     border-color: #9b9eaf !important;
+}*/
+
+/* Overlay scrollbar */
+scrollbar scrollbarbutton ,
+scrollbar gripper {
+	visibility: collapse;
+}
+
+scrollbar ,
+scrollbar thumb {
+	-moz-appearance: none !important;
+}
+
+scrollbar[orient="vertical"] {
+	-moz-margin-start: -6px;
+	min-width: 6px;
+	max-width: 6px;
+}
+
+scrollbar[orient="horizontal"] {
+	margin-top: -6px;
+	min-height: 6px;
+	max-height: 6px;
+}
+
+scrollbar {
+	position: relative;
+	background-image: none;
+	z-index: 2147483647;
+	background-color: transparent;
+}
+
+scrollbar:hover {
+	background-color: ButtonHighlight;
+	transition: all 0.3s ease 0s;
+}
+
+scrollbar thumb {
+    border: none !important;
+    background-color: #9b9eaf !important;
+    border-radius: 16px !important;
+    opacity: 0.50 !important;
+	padding: 1px !important;
+}
+
+scrollbar:hover thumb {
+	opacity: 1;
+	transition: all 0.3s ease 0s;
+}
+
+scrollbar > slider > thumb:hover,
+scrollbar > slider > thumb:active {
+    opacity: 1 !important;
+    background-color: #9b9eaf !important;
+    border-color: #9b9eaf !important;
+    transition: all 0.3s ease 0s !important;
+}
+
+scrollbar > slider {
+    border: 1px solid transparent;
+    background-color: transparent !important;
 }
