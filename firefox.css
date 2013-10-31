@@ -1,6 +1,8 @@
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace 
+url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* General style */
+/*General style*/
+
 .urlbar-history-dropmarker,
 #star-button,  
 #page-proxy-favicon,
@@ -17,121 +19,88 @@
     border: none !important;
     background: transparent !important;
     box-shadow: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
 #nav-bar {
-    background: #ebeced !important;
+    background: #37393d !important;
     border: none !important;
-    border-bottom: 1px solid #d2d3d4 !important;
-    margin-top: 0 !important;
+    border-bottom: 1px solid #37393d !important;
+    margin-top: -4px !important;
     padding-right: 8px !important;
     padding-left: 8px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    height: 38px !important;
+    height: 39px !important;
 }
 
 #navigator-toolbox:after {
-    display: none !important;
+    background-color: #d4d4d4 !important;
 }
 
 #addon-bar {
-    background: #ededeb !important;
-    border-top: 1px solid #d2d3d4 !important;
-    height: 36px !important;
+    background: #37393d !important;
+    border-top: 1px solid #d4d4d4 !important;
+    height: 14px !important;
 }
 
 #urlbar {
     font-size: 10pt !important;
-    color: #595c66 !important;
-    border: 1px solid #d2d3d4 !important;
-    border-radius: 2px !important;
-    background: #fff !important;
+    color: #232323 !important;
+    border: 1px solid #1b1b1b !important;
+    border-radius: 3px !important;
+    background: #ddd !important;
     box-shadow: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
     padding-left: 2px !important;
-    margin-left: 15px !important;
+    margin-left: 4px !important;
     margin-right: 4px !important;
     height: 28px !important;
 }
 
 #searchbar .searchbar-textbox {
-    font-size: 10pt !important;
     color: #444 !important;
-    border: 1px solid rgba(0,0,0,0.18) !important;
-    border-radius: 4px !important;
+    border: 1px solid #bdbdbd !important;
+    border-radius: 3px !important;
     background: #fff !important;
     box-shadow: none !important;
-    height: 25px !important;
+    height: 28px !important;
 }
-
-.tabs-newtab-button {
-    margin-right: 6px !important;
-    margin-left: 6px !important;
-    margin-bottom: 8px !important;
-    margin-top: 6px !important;
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-    background: #505257 !important;
-    border: none !important;
-    border-radius: 2px !important;
-}    
-
-.tabs-newtab-button .toolbarbutton-icon {
-    margin-bottom: 1px !important;
-}
-
-.tabs-newtab-button:hover {
-    background: #6f737f !important;
-    transition: all 0.1s ease 0s;
-}
-
-.tabs-newtab-button:active {
-    background: #252629 !important;
-    box-shadow: inset 0px 0px 2px rgba(0,0,0,0.1) !important;
-    border-top-color: transparent !important;
-    border-bottom-color: rgba(255,255,255,0.1) !important;
-    transition: all 0.1s ease 0s;
-}
+    
 
 #tabbrowser-tabs {
     background: #37393d !important;
-    border: none !important;
-    margin-top: 0px !important;
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-    padding-bottom: 0 !important;
+    border: 1px !important;
+    padding-top: 2px !important;
+    margin-top: -4px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 2px !important;
+    height: 39px !important;
 }
 
 .tabbrowser-tab {
     border: none !important;
-    border-radius: 2px !important;
+    border-radius: 3px !important;
     background: #505257 !important;
-    margin: 1px !important;
-    padding: 3px !important;
+    margin-top: 0 !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
     margin-bottom: 0px !important;
+    margin: 4px !important;
+    box-shadow: none !important;
+    margin-right: 4px !important;
+    height: 28px !important;
 }
-
-.tabbrowser-tab:first-child {
-    margin-left: 0px !important;
-}
-
-.tabbrowser-tab:last-child {
-    margin-right: 0px !important;
-}
-
 .tabbrowser-tab:hover {
     background: #6f737f !important;
-    box-shadow: 0px 0px 2px rgba(0,0,0,0.2) !important;
+    box-shadow: none !important; 
     transition: all 0.1s ease 0s !important;
 }
 
 .tabbrowser-tab[selected=true], .tabbrowser-tab[selected=true]:hover {
-    background: #ebeced !important;
-    margin-bottom: 0px !important;
+    background: #ddd !important;
+    margin-bottom: 4px !important;
     border-top: none !important;
     transition: none !important;
 }
@@ -139,33 +108,34 @@
 .tab-text {
     font-size: 10pt !important;
     text-align: center !important;
-    color: rgba(255,255,255,0.4) !important;
+    color: #aaa !important;
+    padding-bottom: 2px !important;
     margin-left: 2px !important;
     margin-right: 2px !important;
-    margin-bottom: 1px !important;
+    text-shadow: none !important
 }
 
-.tabbrowser-tab:hover .tab-text {
-    color: rgba(255,255,255,0.9) !important;
-    transition: all 0.1s ease 0s;
+.tab-text:hover {
+    color: #555 !important;
+    transition: all 0.3s ease 0s;
 }
 
-.tabbrowser-tab[selected="true"] .tab-text {
-    color: #595c66 !important;
+.tab-text[selected="true"] {
+    color: #444 !important;
 }
 
 /*Disable FXChrome tab background for tabs*/
 .tab-content {
     border: none !important;
-    border-width: 0 0 !important;
+    border-width: 0px 0px !important;
     -moz-margin-start: 0 !important;
-    -moz-margin-end: 0 !important;
+    -moz-margin-end: 0px !important;
 }
 
 /*Remove the padding caused by the left and right arrows*/
 .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
-    -moz-padding-start: 0 !important;
-    -moz-padding-end: 0 !important;
+    -moz-padding-start: 0px !important;
+    -moz-padding-end: 0px !important;
 }
 
 .toolbar-primary {
@@ -178,279 +148,236 @@
 #urlbar-reload-button,
 #urlbar-stop-button,
 #urlbar-go-button {
-    padding-top: 2px !important;
+    padding-top: 1px !important;
+    opacity: 0.5 !important;
+    border-radius: 2px !important;
     border: none !important;
 }
 
 #urlbar-reload-button:hover,
 #urlbar-stop-button:hover,
 #urlbar-go-button:hover {
+    transition: all 0.3s ease 0s !important;
+    opacity: 0.75 !important;
     background: transparent !important;
 }
 
+.tabs-newtab-button {
+    -moz-margin-start: 0px !important;
+    margin: 2px !important;
+    padding-bottom: 1px !important;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+    background: #37393D !important;
+    border: 1px solid #505257 !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+}
+
+.tabs-newtab-button .toolbarbutton-icon {
+    margin-bottom: 1px !important;
+}
+
+.tabs-newtab-button:hover {
+    background: #505257 !important;
+    transition: all 0.1s ease 0s;
+}
+
+.tabs-newtab-button:active {
+    background: #252629 !important;
+    box-shadow: none !important;
+    border-top-color: transparent !important;
+    border-bottom-color: rgba(255,255,255,0.1) !important;
+    transition: all 0.1s ease 0s;
+}
+
 #back-button {
-    padding-top: 1px !important;
-    margin: 8px !important;
-    background: transparent !important;
-    border: none !important;
+    width: 31px !important;
+    margin: 4px !important;
+    margin-right: 0px !important;
+    margin-left: 4px !important;
+    background: #37393d !important;
+    border: 1px solid #505257 !important;
+    border-radius: 3px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
     box-shadow: none !important;
 }
 
 #forward-button {
-    padding-top: 1px !important;
-    margin: 8px !important;
-    margin-left: 11px !important;
-    background: transparent !important;
-    border: none !important;
+    width: 31px !important;
+    margin: 4px !important;
+    margin-left: 0px !important;
+    background: #37393d !important;
+    border: 1px solid #505257 !important;
+    border-left: 0px !important;
+    border-radius: 3px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    box-shadow: none !important;
 }
 
-#forward-button[disabled],
-#back-button[disabled] {
-    opacity: 0.5;
-}
-
-#reload-button,
-#stop-button,
-#downloads-indicator,
-#downloads-button,
+#reload-button, 
+#downloads-button, 
+#downloads-indicator, 
 #appmenu-toolbar-button, 
 #tabview-button,
 #bookmarks-menu-button,
 #bookmarks-button,
 #home-button,
+#stop-button,
 #alltabs-button {
-    margin: 8px !important;
-    background: transparent !important;
-    border: none !important;
+    width: 31px !important;
+    margin: 4px !important;
+    background: #37393D !important;
+    border: 1px solid #505257 !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
 }
+
+#back-button:hover, 
+#forward-button:hover, 
+#reload-button:hover, 
+#downloads-indicator:hover, 
+#appmenu-toolbar-button:hover, 
+#tabview-button:hover,
+#bookmarks-menu-button:hover,
+#bookmarks-button:hover,
+#home-button:hover,
+#stop-button:hover,
+#alltabs-button:hover {
+    background: #505257 !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease 0s;
+}
+
+#back-button:active, 
+#forward-button:active, 
+#reload-button:active, 
+#downloads-indicator:active, 
+#appmenu-toolbar-button:active, 
+#tabview-button:active,
+#bookmarks-menu-button:active,
+#bookmarks-button:active,
+#home-button:active,
+#stop-button:active,
+#alltabs-button:active {
+    box-shadow: none !important;
+    background: #eee !important;
+    transition: all 0.3s ease 0s;
+}
+
 
 /* Icon replacements */
 .tabs-newtab-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUJEi4LVOvCEQAAACdJREFUOMtjYBje4D8U4FPDRKklA28AI7qfidLEyMhINReMxsKwAACAUhQA+0tI1AAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0) !important;
-    opacity: 0.4;
+    list-style-image: 
+url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAABmJLR0QAwgDCAMKN1+F2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QEIFxonlu5eSwAAAF9JREFUSMdjYBgFo2AUDHbASI6mvLy8/zD2pEmTSDaDhRxLOTg4KPIp00AEL9OgjVPkOEQP3h8/fqCoJSaOWSiNQ3Lil2nIZJmysjJ4cHd1dTGOpt5BZekoGAWjYPADALPCD2CJ3ddJAAAAAElFTkSuQmCC) 
+!important;
+    -moz-image-region: rect(0px, 29px, 27px, 0px)!important;
+    opacity: 0.55;
 }
 
 .tabs-newtab-button:hover .toolbarbutton-icon {
-    opacity: 0.9;
-    transition: all 0.1s ease 0s;
+    opacity: 1.0;
+    transition: all 0.3s ease 0s;
 }
 
 #back-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAbwBzAH90LOFHAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFB0SKMNDqQAAAMdJREFUOMvd0T1KA1EYheHHnz2IkURQGUifVjCmcA1WLmGKWcBwF3CLW7sEC7OBkDKNNonoEqI2rkCwuYXgOMlUgl99zsvHe/jr29kUKKv6AHc4TzH8yO9vKB9ihiFemjK7LeUTLHL5CeOtAWVVn2KOYywxSTG8bQUoq/oslwd4wEWK4f23T5s+uEUfn7hJMXy0eWoCXOMZe7gvq7rXCZBieMVlFldg3gZplJiFTbD6BjnqNGMWd5X3LzDtBMiQdd7/ESP/874ABsgzDKHtShEAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
+    list-style-image: 
+url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAABmJLR0QAoQChAKHNb6lwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QEJABcdRJkrJAAAAHNJREFUSMft1DkOwCAMRNExHUek9cHcckxSRYoIBV6g8q9BD7EBWZbdrLU2tHPIC9ZaAQAiQsfRL/i2C9Nt0IR6QTUaAarQKBAAyu7AGfSkWikz/97k0e2NhE1n4oWLBV0Bmu+wWC/DDPfeCbdabXWWZaE9NLYwEAEBBL0AAAAASUVORK5CYII=) 
+!important;
+    -moz-image-region: rect(0px, 29px, 27px, 0px)!important;
+    opacity: 0.6 !important;
 }
 
 #back-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QATAB7ANnD6+P2AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFB4RmudB0AAAAMRJREFUOMvd0T1KA1EYheFH4x7ESBRU5pLeNhBNYTMbsHIhU99VuIQUSXHbkNLGNFGUWYE/jSsQbG4hOE4yleBXn/Py8R7++nY2Bcqq3scUoxTDj/zehvIBFhjiuSmz21I+wV0uP+Jia0BZ1adY4hhrTFIMb1sByqo+y+Uj3GOcYnj/7dOmD24xwCduUgwfbZ6aANd4Qg+zsqr7nQAphldcZnEFlm2QRolZ2AQP3yCHnWbM4q7y/gXmnQAZ8pL3X+Hc/7wv+a0zDI26lVUAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.1s ease 0s;
+    opacity: 1.0 !important;
+    transition: all 0.3s ease 0s;
 }
 
 #forward-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QATAB7ANnD6+P2AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFB4ttYg9VwAAANhJREFUOMvd0qFKBGEUxfHfqtVgWVhYm6uy1SKIsCCIxeSDTJgHmPmSGL7wvYcPYHLFoIhBERRBmyJoEZvNLWMRd52xCN54Lv/DuYfLX0/rOzHLi3dcYCfF8DTJYGqMfotVHGV50f2NwSau0MNJlhcLjQxSDC8Y4BzzGGZ50WuSQIrhtUpyhi6Os7zo1yrxS6GLuMYMTudmW2tlWX587qd/gDs4QBv32N7bDW+1TqjgQyzjBusphoe6f9DBEEtV/I0Uw3OTEvcr+A5b4+BJBiu4xCDF8Oh/zwg3/zkSZURStQAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
+    list-style-image: 
+url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAABmJLR0QAoQChAKHNb6lwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QEJABcS1CY2tQAAAHRJREFUSMftlCsWACEIRR/TWKKVhVlZItFJljlT+GjiZvQe8QHQNM1Jxhgrewd5ikVkAYCZQVXpuHQLNxlx6KVZsftAhTjUnqw4HIaM+KkaJWa+214AmHPStSB5hemRiQhdf/q3/iJCl/SbzKgQVSFqmuYoL6SiQhCpx5SsAAAAAElFTkSuQmCC) 
+!important;
+    -moz-image-region: rect(0px, 29px, 27px, 0px)!important;
+    opacity: 0.6 !important;
 }
 
 #forward-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QATAB7ANnD6+P2AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFB8yIZsB4wAAAMlJREFUOMvd0rFKA0EYxPFffAoDsTOs2NrYCEFBLLaz90WuuWbfwkew3NoEC0EsFEFx0S5B0EZLCwubKySYM2cjOOXA/Bm++fhr9b4zY1XecYXDnMJTG2BlgX+PbUxiVQa/AezjBkOcx6qsdwLkFF4wwiXWMI5VGXZpIKfw2jS5wABnsSqbSwMayBuO8IFVHNd13ftxhS9r9HGKDTxiN6cwXarBXPgOO/Phtj/oY4yAW+zlFJ67HPGkCT/gYFG4DbCFa4xyCjP/W586Fzj9IMRCdQAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.1s ease 0s;
-}
-
-#downloads-indicator-icon {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QATAB7ANnD6+P2AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCEqczKCyAAAALtJREFUOMvtk60KAlEQhT+1+gSC72BTTFotNsEXUEw33Ae4zAPcMFG7D7DRKAZ/isVoEzQviEnQsmFZ98qCiMWBCTNzznCYH/i1lUIFY90jHauXXGz5UwX/BqktGOumwKggb6ZexlkFEyAqQI4S7OsdGOuqwApoBMg7oKtebsFDMtbVgA1Qz5ROQFO9XN4OUb2cgT5wTaVjoJclB7egXvbAALgnPlQvhzxsJTSp7Xp5bLU7MbBQL/OvfeMTYnMuKqXfcPEAAAAASUVORK5CYII=)!important;
-    -moz-image-region: rect(0,16px,16px,0) !important;
-}
-
-/* The hover state for the downloads button doesn't work! Neither does the notification icon */
-#downloads-indicator:hover #downloads-indicator-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QATAB7ANnD6+P2AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCIB9KMoSwAAAK1JREFUOMvtky8KQkEQxn+aPYFgnmozW2XBJngBxaAX2DyH0Fs8mBtYxGKxbH6gWRCToOWFZXXliYjFgQnz5xs+5puBX1sjV3A+3OLYVJ72Nj9l8B8QqeB8WAKTmriVqUxTBjOgqAEuqt7HO3A+tIA10M2At0DfVC7ZQ3I+tIEN0ElKJdAzlePLJZrKARgC5yh9AgYpOKuCqeyAEXCtfGwq+7clcj4snA/zr37jHVXTKXlqqFodAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.1s ease 0s;
-}
-
-#downloads-indicator-notification {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QATAB7ANnD6+P2AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCIB9KMoSwAAAK1JREFUOMvtky8KQkEQxn+aPYFgnmozW2XBJngBxaAX2DyH0Fs8mBtYxGKxbH6gWRCToOWFZXXliYjFgQnz5xs+5puBX1sjV3A+3OLYVJ72Nj9l8B8QqeB8WAKTmriVqUxTBjOgqAEuqt7HO3A+tIA10M2At0DfVC7ZQ3I+tIEN0ElKJdAzlePLJZrKARgC5yh9AgYpOKuCqeyAEXCtfGwq+7clcj4snA/zr37jHVXTKXlqqFodAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0) !important;
-}
-
-#urlbar-reload-button .toolbarbutton-icon,
-#reload-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAWQBcAGYNNwV8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCUVoThq8QAAASNJREFUOMvN0r9qVEEUBvDfLsFYSGCFVNEqzRYzQwJCthfTpcobaGNAC99ikyJ5hlhGsBFssk+QiIR7r0HbQNJKSKFuszYTuGzu3qydB4YzM4fvO9/5wz1WlNVRUVZPZsU7cxBM8At7GKYYfrcSFGX1AC/xCqvo1cLf8TbFMLr9WJgCr+AT1mcIejRFqFsDP8TnDL7ANpZzeIxd9FMMH+oEdQU7SBm8lmL4mYlHeJNi+NHaxKKsTvEM2ymGj+a0bu3ez/7YP9hCg5pJy0iXcI2bFMPStILz7J+3JNzM/ltTCYfZD4uy6jVkf4z9/Hzf1MRFnNQm8S73o4MXOMBTnGEjxTC+s4lzLNJXbKUYrppKkGK4xCDvxBf8yecUrzGog/8P+wtOP1JABqAOIwAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-        opacity: 1.0 !important;
-}
-
-#urlbar-reload-button:hover .toolbarbutton-icon,
-#reload-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAWQBcAGYNNwV8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCUvZzSzQwAAAS1JREFUOMvN0r1KXVEQBeDPH8RCBBMEQa3S2CiKeYOgnZXVgVMpHAiawmewUQvtN5GQsGFDBJtAGn2DEL0EI6a1sBWxSAgE02zhcDler53TrL1nmDVrfnjEirL6XJTVxEPxni4I7vAbO9hKMfzpSFCU1QBWsIpXGKmFL/AuxXB87+hvSx7HF8w9IGiojVBvLXkQX3PyJZYxmsN/sY2pFMNBnaCu4C1mcvJsiuE6Ex9jPcXwq+MQi7L6htdYTjEc6tJ6a++pjEeeYP0Nau46rHQYN7hNMQy3KzjP+KZDwcWMP5ta+JhxqyirkYbqL7Cbv5+aWniPKm+iVZTVRp5HDxawh0m0sN94iV0c0gmWUgxX946+evTsx/fb6Zn5D7jCGF7iH06xibUUw41nZf8BvvpOA395qr0AAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.1s ease 0s;
-}
-
-#urlbar-stop-button .toolbarbutton-icon,
-#stop-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAWQBcAGYNNwV8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCYTY3acBwAAALNJREFUOMvtkkEOwVAURQ8RYmBkAd3A/38Jpo0gUcywOmJEmiAShpbQdhVirkyY3IFUqQX0jV5u7nv/vJsPZVWyQhQnZ+AKTJ01N2lNYAW0nTWdd38tZ+kFGANhFCdDaSHgA+usOW/BDGhpYCNKHzgB88IThFzXawNJO2DirHlkvdUf+Ty/9IUhNoTeAw7ydIG9KO5FBEsNHxXmSH0fWPxzggdsgcBZkzprUiBQDl758z/rBbY4K1u1orxQAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
     opacity: 1.0 !important;
+    transition: all 0.3s ease 0s;
 }
 
-#urlbar-stop-button:hover .toolbarbutton-icon,
-#stop-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAWQBcAGYNNwV8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCYlrMwJngAAALFJREFUOMvtkrEOAUEURQ8RolD5gP0T7UaQWDQbo92PmtbENGQTRELpc0RvaWhuIWtZH7Cverm57815NwNV1fJCbJIzcAXm3tmbtDawArre2d67v1Gw9AJMgTQ2yVhaCoTAOm8uWmCAjgY2ogyBE7AoPUHITb02krQDZt7ZR95b/5HP80tfGmJL6APgIE8f2IviXkbgNHxUmBP1Q2D5zwkBsAUi72zmnc2ASDkE1c//rBfBeiy5rGCXCAAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.1s ease 0s;
-}
-
-#urlbar-go-button .toolbarbutton-icon,
-#go-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAWQBcAGYNNwV8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCMorwqBZgAAAKNJREFUOMvNk70JAkEQhT9FrMISZqYAC7gCDPUKEC6zAlswFMHAyOhaEIyMd7cPQ4XDn0iQVY5lD8GXzbzhGx7DwK/lfBi3+f0ExsH5UHYBDIGd82H5zewlRHi8lVtgbirNByAabFMNlKZySY0QawKcnA+jXACAAZsugCMwzQXsgcJUzjlXWAOVqdxejUHi1juwMJVVbKQArsDMVOrcXyj4az0BwZQrx/cLT+4AAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#urlbar-go-button:hover .toolbarbutton-icon,
-#go-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAWQBcAGYNNwV8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QUYFCQiAJ7+vwAAAKFJREFUOMvNkz0KAkEMhT9FPIVn8AAeYA9gN5p6EOw8gVewNIKFBGK1VxCs9jaWCuJPJcgqyzCL4OuSF77wCIFfK0gcNfndBMYhSJQ2gD6wCxKX38xOQoTHW7kFZm56/QDUBptUAuKm59QIdY2BKkgc5AIAhsCmDeAITHIBe6Bw01POFdbA3E1vr0YvcesdWLjpqm6kAC7A1E3L3F8o+Gs9ARChKQsCJM/KAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.1s ease 0s;
-}
-
-/* Change icons' opacity so it fits with the rest of the theme */ 
+/* Change icons' opacity so it fits with the rest of the theme */
+#reload-button .toolbarbutton-icon, 
+#downloads-indicator .toolbarbutton-icon, 
+#downloads-button .toolbarbutton-icon, 
 #appmenu-toolbar-button .toolbarbutton-icon, 
 #tabview-button .toolbarbutton-icon,
 #bookmarks-menu-button .toolbarbutton-icon,
 #bookmarks-button .toolbarbutton-icon,
 #home-button .toolbarbutton-icon,
+#stop-button .toolbarbutton-icon,
 #alltabs-button .toolbarbutton-icon {
-    opacity: 0.6 !important;
+    opacity: 0.55 !important;
 }
 
+#reload-button:hover .toolbarbutton-icon, 
+#downloads-indicator:hover .toolbarbutton-icon, 
+#downloads-button .toolbarbutton-icon,
 #appmenu-toolbar-button:hover .toolbarbutton-icon, 
 #tabview-button:hover .toolbarbutton-icon,
 #bookmarks-menu-button:hover .toolbarbutton-icon,
 #bookmarks-button:hover .toolbarbutton-icon,
 #home-button:hover .toolbarbutton-icon,
+#stop-button:hover .toolbarbutton-icon,
 #alltabs-button:hover .toolbarbutton-icon {
     opacity: 0.9 !important;
-    transition: all 0.1s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
-/* Make tabs fit all horizontal width available, no matter how many there are 
-and make Firefox tabs close properly even though max-width is overridden */
-/*.tabbrowser-tab:not([pinned])[fadein] {
-    max-width: 5000px !important;
-    min-width: 1px !important;
-}*/
-
-/* Normal scrollbar */
-/*scrollbar,
-scrollbar > slider, 
-scrollbar > slider > thumb, 
-scrollbar > scrollbarbutton { 
-    -moz-appearance: none !important; 
-}
-scrollbar, 
-scrollbar > scrollbarbutton { 
-    border: none !important; 
-    background: none !important; 
-}
-
-scrollbar[orient="vertical"] {
-	min-width: 6px !important;
-	max-width: 6px !important;
-}
-scrollbar[orient="horizontal"] {
-	min-height: 6px !important;
-	max-height: 6px !important;
-}
-
-scrollbar[orient='horizontal'] > slider > thumb { 
-    min-width: 42px !important; 
-    max-height: 4px !important;
-}
-
-scrollbar[orient='vertical'] > slider > thumb { 
-    min-height: 42px !important; 
-    max-width: 4px !important;
-} 
-
-scrollbar > slider {
-    border: 1px solid transparent;
-    background-color: transparent !important;
-}
-
-scrollbar > slider > thumb {
-    border: none !important;
-    background-color: #cbced7 !important;
-    border-radius: 16px !important;
-    opacity: 1 !important;
-}
-
-scrollbar > slider > thumb:hover,
-scrollbar > slider > thumb:active {
-    background-color: #9b9eaf !important;
-    border-color: #9b9eaf !important;
-}*/
-
-/* Overlay scrollbar */
 scrollbar scrollbarbutton ,
 scrollbar gripper {
 	visibility: collapse;
 }
-
 scrollbar ,
 scrollbar thumb {
 	-moz-appearance: none !important;
 }
-
 scrollbar[orient="vertical"] {
-	-moz-margin-start: -6px;
-	min-width: 6px;
-	max-width: 6px;
+	-moz-margin-start: -4px;
+	min-width: 4px;
+	max-width: 4px;
 }
-
 scrollbar[orient="horizontal"] {
-	margin-top: -6px;
-	min-height: 6px;
-	max-height: 6px;
+	margin-top: -4px;
+	min-height: 4px;
+	max-height: 4px;
 }
-
 scrollbar {
 	position: relative;
 	background-image: none;
 	z-index: 2147483647;
 	background-color: transparent;
 }
-
 scrollbar:hover {
 	background-color: ButtonHighlight;
 	transition: all 0.3s ease 0s;
 }
-
 scrollbar thumb {
-    border: none !important;
-    background-color: #9b9eaf !important;
-    border-radius: 16px !important;
-    opacity: 0.50 !important;
+	border: none !important;
+	border-radius: 1.5px !important;
+	background-color: #92969b;
+	opacity: .55;
 	padding: 1px !important;
 }
-
 scrollbar:hover thumb {
 	opacity: 1;
+	background-color: #3878d4 !important;
+}
+scrollbar thumb:active ,
+scrollbar thumb:hover {
+	opacity: 1;
+	background-color: ButtonShadow;
 	transition: all 0.3s ease 0s;
-}
-
-scrollbar > slider > thumb:hover,
-scrollbar > slider > thumb:active {
-    opacity: 1 !important;
-    background-color: #9b9eaf !important;
-    border-color: #9b9eaf !important;
-    transition: all 0.3s ease 0s !important;
-}
-
-scrollbar > slider {
-    border: 1px solid transparent;
-    background-color: transparent !important;
 }
