@@ -56,9 +56,6 @@
 @define-color button_active_background #595c66;
 @define-color button_active_text @theme_selected_fg_color;
 
-@define-color button_hover_gradient_color_a shade(@button_gradient_color_a, 1.11);
-@define-color button_hover_gradient_color_b shade(@button_gradient_color_b, 1.06);
-
 @define-color insensitive_bg_color shade(@theme_alt_color, 1.05);
 @define-color insensitive_fg_color @insensitive_trough_bg_color;
 @define-color insensitive_scale_borders @insensitive_borders;

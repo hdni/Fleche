@@ -1,5 +1,5 @@
 # Flèche
-A GNOME 3.8 theme for GNOME Shell, GTK 3, Mutter, GNOME Terminal, and Firefox. [See the preview](http://hdni.github.io/rice/assets/fleche_display.png).
+A GNOME 3.10 theme for GNOME Shell, GTK 3, Mutter, GNOME Terminal, and Firefox. [See the preview](http://hdni.github.io/rice/assets/fleche_display.png).
 
 ## Installation
 ### GNOME Shell, GTK 3, Mutter

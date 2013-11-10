@@ -983,9 +983,9 @@ GtkColorButton.button {
 	color: @button_active_text;
 }
 
-/*.button *:hover {
-	color: @button_foreground;
-}*/
+.button *:hover {
+	color: @button_hover_foreground;
+}
 
 .button *:insensitive,
 .button *:active:insensitive {
@@ -1016,11 +1016,11 @@ GtkComboBox.combobox-entry .button *:active,
 }
 
 GtkComboBox.combobox-entry .button *:hover, 
-.header-bar .button *:hover,
-.toolbar .button *:hover,
-.toolbar .button.raised *:hover,
-.toolbar .raised .button *:hover,
-.inline-toolbar .button *:hover {
+.header-bar .button:hover,
+.toolbar .button:hover,
+.toolbar .button.raised:hover,
+.toolbar .raised .button:hover,
+.inline-toolbar .button:hover {
 	color: @toolbar_button_hover_color;
 }
 
@@ -1185,7 +1185,7 @@ GtkComboBox.combobox-entry .button *:hover,
 .inline-toolbar.toolbar GtkToolButton:first-child > .button,
 .inline-toolbar.toolbar GtkToolButton:first-child > .button:active,
 .inline-toolbar.toolbar GtkToolButton:first-child > .button:insensitive {
-	border-left-width: 2px;
+	border-left-width: 0;
 	border-right-width: 0;
 	border-radius: 4px;
 	border-color: transparent;
@@ -1206,7 +1206,7 @@ GtkComboBox.combobox-entry .button *:hover,
 .inline-toolbar.toolbar GtkToolButton:last-child > .button:active,
 .inline-toolbar.toolbar GtkToolButton:last-child > .button:insensitive {
 	border-left-width: 0;
-	border-right-width: 2px;
+	border-right-width: 0;
 	border-radius: 4px;
 	border-color: transparent;
 }
@@ -2313,20 +2313,24 @@ GtkProgressBar.osd.progressbar {
  ****************************/
 .toolbar .suggested-action.button,
 .suggested-action.button {
-	background: @suggested_toolbar_button_bg;
-	color: @suggested_toolbar_button_fg;
+	background: @button_background;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.1);
+	color: @button_foreground;
+	border-bottom: 1px solid transparent;
+	border-radius: 2px;
 }
 
 .toolbar .suggested-action.button:hover,
 .suggested-action.button:hover {
-	background: @suggested_toolbar_button_fg;
-	color: @suggester_toolbar_button_bg;
+	background: @button_hover_background;
+	color: @button_hover_foreground;
 }
 
 .suggested-action.button:active,
 .suggested-action.button:hover:active {
-	background: transparent;
-	color: @suggested_toolbar_button_active_fg;
+	background-color: @button_active_background;
+	box-shadow: inset 0px 1px 4px rgba(0,0,0,0.4);
+	border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .toolbar .suggested-action.button *,
@@ -2516,7 +2520,7 @@ GtkSwitch.trough:insensitive {
 	color: transparent;
 	box-shadow: none;
 	background-color: transparent;
-	background-size: 40px 22px;
+	background-size: 40px 23px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	text-shadow: none;
@@ -2909,16 +2913,12 @@ GtkBubbleWindow .toolbar {
  * CSD *
  *******/
 .titlebar {
-	font: Bold 10;
-
-	padding: 0;
-	border-style: none;
-
+	padding: 6px;
+	border: none
 	box-shadow: none;
-	background-image: linear-gradient(to bottom,
-		@wm_bg_a,
-		@wm_bg_b);
-	border-radius: 10px 10px 0px 0px;
+	background: @theme_alt_color;
+	color: @theme_text_color;
+	border-radius: 2px 2px 0 0; 
 }
 
 .titlebar:backdrop {
@@ -2927,59 +2927,61 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar .button {
-	icon-shadow: 0px 1px darker (darker (@theme_base_color));
+	border-image: none;
+	border: none;
+	border-bottom: 1px solid @theme_alt_color;
+	border-radius: 0;
+
+	background-image: none;
+	background: @toolbar_button_background;
+	color: @toolbar_button_color;
 }
 
-.titlebar .button {
-	border-style: none none solid solid;
-	border-color: darker(@theme_base_color);
-	border-image: none;
-	border-width: 1px;
-	border-radius: 0px;
-
-	background-image: linear-gradient(to bottom,
-		@wm_button_bg_a,
-		@wm_button_bg_b,
-		@wm_button_bg_c,
-		@wm_button_bg_d);
+.titlebar .linked .button {
+	border-radius: 0;
 }
 
 .titlebar .button:hover {
-	background-image: linear-gradient(to bottom,
-		@wm_button_bg_hover_a,
-		@wm_button_bg_hover_b,
-		@wm_button_bg_hover_c,
-		@wm_button_bg_hover_d);
+	color: @toolbar_button_hover_color;
+	background: @toolbar_button_background;
 }
 
 .titlebar .button:active {
-	background-image: linear-gradient(to bottom,
-		@wm_button_bg_active_a,
-		@wm_button_bg_active_b,
-		@wm_button_bg_active_c);
+	color: @toolbar_button_color;
+	background: @toolbar_button_active_background;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	border-radius: 4px;
+}
+
+.titlebar .button:hover:active {
+	color: @toolbar_button_color;
+}
+
+.titlebar .button:active:focus {
+	border-width: 0;
 }
 
 .titlebar .button:first-child {
-	border-style: none none solid none;
-	border-top-left-radius: 10px;
 }
 
 .titlebar .button:last-child {
-	border-top-right-radius: 10px;
 }
 
 .titlebar .button:backdrop {
-	background-image: none;
-	color: darker (@theme_base_color);
-	icon-shadow: none;
-	border-style: none;
+}
+
+.titlebar .titlebutton {
+}
+
+.titlebar .separator {
+	color: @toolbar_border_color;
 }
 
 .window-frame {
-	border-color: darker(@theme_base_color);
-	border-radius: 10px 10px 0 0;
-	border-width: 1px;
-	border-style: solid;
+	border: none;
+	border-radius: 2px 2px 0 0; 
+	background: @toolbar_background;
 
 	box-shadow: 0 2px 8px 3px @wm_shadow;
 
