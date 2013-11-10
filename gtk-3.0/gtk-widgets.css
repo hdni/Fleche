@@ -2914,7 +2914,6 @@ GtkBubbleWindow .toolbar {
  *******/
 .titlebar {
 	padding: 6px;
-	border: none
 	box-shadow: none;
 	background: @theme_alt_color;
 	color: @theme_text_color;
