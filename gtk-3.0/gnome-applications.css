@@ -114,6 +114,10 @@ NautilusToolbar .toolbar {
 	background: @toolbar_background;
 }
 
+NautilusWindow .titlebar {
+	border-bottom: 0px solid @toolbar_border_color;
+}
+
 NautilusToolbar .button:active:focus,
 NautilusToolbar .button {
 	border-color: transparent;
