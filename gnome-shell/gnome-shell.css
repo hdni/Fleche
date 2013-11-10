@@ -839,6 +839,7 @@ StScrollBar StButton#vhandle:active {
 	border-left: none;
 	border-top: none;
 	border-bottom: none;
+	border-radius: 0;
 }
 
 #dash:rtl {
